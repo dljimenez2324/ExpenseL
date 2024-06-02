@@ -11,7 +11,7 @@ interface ExpenseProps {
     onDelete: (id:number) => void
 }
 
-// we are going to desctructure our interface so we can use them as pass throughs
+// we are going to destructure our interface so we can use them as pass throughs
 const ExpenseList = ({expenses,onDelete}:ExpenseProps) => {
 
     // if our array is empty we can have a separate return

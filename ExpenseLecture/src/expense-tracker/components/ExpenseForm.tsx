@@ -19,7 +19,7 @@ const ExpenseForm = () => {
         <div className="mb-3">
           <label htmlFor="category" className="form-label">Category</label>
           <select id="category" className="form-select">
-            {/* now we can add optoins into our dropdown and we'll use our array that was imported*/}
+            {/* now we can add options into our dropdown and we'll use our array that was imported*/}
             {/* notice that categories is holding our array. we then map it so we can get the various elements in the array  */}
             {/* map has a call back so we make category as our parameter and we make our option as our call back */}
             <option value=""></option>
