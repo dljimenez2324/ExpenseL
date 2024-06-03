@@ -23,13 +23,15 @@ const App = () => {
     {id: 5, description: 'eee', amount: 30, category: 'Groceries'}
   ])
   
+  // lets make a variable with a ternary operator   we will then use our selectedCategory as a boolean like filter through our dummyExpenseArray
+  const visibleExpense = selectedCategory ? dummyExpensesArray.filter(e=>e.category === selectedCategory) : dummyExpensesArray;
+  
+  // delete function
   const handleDelete = (id:number) => {
     // remember that filter will return everything else that is not the id that we pass through
     setDummyExpensesArray(dummyExpensesArray.filter(expense => expense.id !== id ))
   }
 
-  // lets make a variable with a ternary operator   we will then use our selectedCategory as a boolean filter through our dummyExpenseArray
-  const visibleExpense = selectedCategory ? dummyExpensesArray.filter(e=>e.category === selectedCategory) : dummyExpensesArray;
 
   return (
     <>

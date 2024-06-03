@@ -8,7 +8,7 @@ interface FilterProps {
 const ExpenseFilter = ({onSelectCategory}:FilterProps) => {
   return (
     <>
-
+        {/* Where is the onChange saving its info and where does it go? */}
         <select className="form-select" onChange={(e) => onSelectCategory(e.target.value)} >
             <option value="">All Categories</option>
             {categories.map(category => <option key={category} value={category}>{category}</option> )}
